@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
-
 export const Navbar = () => {
   return (
-    <nav className="bg-neutral-950 text-white px-8 py-6 border-b border-white/5 w-full">
+    <nav className="bg-neutral-950 text-white px-8 py-6 w-full">
       <div className="max-width-7xl mx-auto flex justify-between items-center">
         <div className="ml-20">
             <ul className="flex items-center gap-7 text-sm font-medium h-20">
@@ -26,8 +25,8 @@ export const Navbar = () => {
 
         <div>
             <div className="flex gap-10 w-full items-center">
-                <span className="font-medium">Register</span>
-                 <Button className="bg-blue-600 font-bold">
+                <span className="font-medium cursor-pointer">Register</span>
+                 <Button className="bg-blue-600 font-bold cursor-pointer">
                   Book a demo
                  </Button>
             </div>

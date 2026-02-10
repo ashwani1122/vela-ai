@@ -1,18 +1,31 @@
-
+import "@/index.css"
 export const Hero = ()=>{
 
     return <>
-        <div className="flex items-center flex-col h-screen bg-zinc-950 bg-[linear-gradient(135deg,rgba(211, 211, 232, 0.45)_0%,rgba(28, 9, 134, 0)_50%)]">
-           <div className="text-8xl font-medium flex flex-col w-full pt-20 text-center  ">
+        <div className=" flex items-center flex-col h-screen bg-zinc-950 min-h-screen ">
+           <div className="text-8xl font-medium flex flex-col w-full pt-20 text-center items-center bg-gradient-to-b from-zinc-900 to-zinc-950">
                  <span className="tracking-tight text-zinc-100">Meet your AI assistant </span> 
-                 <span className=" text-zinc-100">for effortless scheduling</span> 
+           
+            <div className="flex gap-5 p-4">
+            <span className="text-zinc-100">for effortless</span>
+            <span className="w-fit hover:bg-neutral-800">
+            <span className="hover-shake text-zinc-100 inline-block transition-transform duration-500 hover:scale-85 hover:duration-[5000ms] h-20 w-120   text-center flex items-center">
+                <span>
+                scheduling
+                </span>
+            </span>
+            </span>
+            </div>
+           
+
+
            </div>
 
-           <div className="text-zinc-100 text-2xl w-[80%] flex flex-col text-center pt-10">
-                <span>Vela is your AI scheduling assistant that gives you back your most valuable resource: time. </span>
-                <span>  She books meetings, coordinates across teams & stakeholders, </span>
+           <div className="text-zinc-100 text-xl w-[80%] flex flex-col text-center pt-10">
+                <span>Vela is your AI scheduling assistant that gives you back your most valuable resource: time. She books meetings,</span>
+                <span> and handles the back-and-forth so you don't have to.  coordinates across teams & stakeholders, </span>
                 <span> 
-                and handles the back-and-forth so you don't have to.</span>
+                </span>
            </div>
        </div>
     </>

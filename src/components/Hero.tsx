@@ -1,19 +1,15 @@
 import "@/index.css"
+import {  SchedulingButton } from "./dustcanvas"
 export const Hero = ()=>{
 
     return <>
         <div className=" flex items-center flex-col h-screen bg-zinc-950 min-h-screen ">
            <div className="text-8xl font-medium flex flex-col w-full pt-20 text-center items-center bg-gradient-to-b from-zinc-900 to-zinc-950">
                  <span className="tracking-tight text-zinc-100">Meet your AI assistant </span> 
-           
             <div className="flex gap-5 p-4">
             <span className="text-zinc-100">for effortless</span>
-            <span className="w-fit hover:bg-neutral-800">
-            <span className="hover-shake text-zinc-100 inline-block transition-transform duration-500 hover:scale-85 hover:duration-[5000ms] h-20 w-120   text-center flex items-center">
-                <span>
-                scheduling
-                </span>
-            </span>
+            <span className="hover:bg-neutral-800">
+            <SchedulingButton/>
             </span>
             </div>
            

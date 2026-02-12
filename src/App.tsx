@@ -1,13 +1,11 @@
 
-import { Hero } from './components/Hero'
-import Navbar from './components/Navbar'
+import { Navbar1 } from './components/Navbar'
 
 function App() {
   return (
     <>
     <div className='bg-zinc-950'>
-      <Navbar/>
-      <Hero/>
+      <Navbar1/>
     </div>      
     </>
   )

@@ -1,8 +1,9 @@
 import "@/index.css"
 import { HeroButton } from "./dustcanvas"
+
 import { MyButton } from "./Button"
 export const Hero = ()=>{
-
+   
     return <>
         <div className=" flex items-center flex-col h-screen bg-zinc-950 min-h-screen mt-20">
            <div className="text-8xl font-medium flex flex-col w-full pt-20 text-center items-center">
@@ -19,7 +20,9 @@ export const Hero = ()=>{
                 <span> 
                 </span>
            </div>
-           <MyButton placeholder="Explore Pro Collection"/>
+           <div className="mt-20">
+                <MyButton placeholder="Book Demo ->" onclick={()=>window.location.href="https://tryvela.ai/book-demo"}/>
+            </div>
        </div>
     </>
 }

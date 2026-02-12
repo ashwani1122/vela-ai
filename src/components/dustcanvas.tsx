@@ -34,10 +34,10 @@ export const HeroButton = () => {
     >
       {/* 1. CORNER POINTS - Now inside the return and z-indexed */}
       <div className={`absolute inset-0 z-30 pointer-events-none transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'}`}>
-        <span className="absolute -top-1 -left-1 h-3 w-3 rounded-full bg-zinc-400 shadow-[0_0_10px_#3b82f6] animate-pulse"></span>
-        <span className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-zinc-400 shadow-[0_0_10px_#3b82f6] animate-pulse"></span>
-        <span className="absolute -bottom-1 -left-1 h-3 w-3 rounded-full bg-zinc-400 shadow-[0_0_10px_#3b82f6] animate-pulse"></span>
-        <span className="absolute -bottom-1 -right-1 h-3 w-3 rounded-full bg-zinc-400 shadow-[0_0_10px_#3b82f6] animate-pulse"></span>
+        <span className="absolute -top-1 -left-1 h-2 w-2 rounded-full bg-zinc-400 shadow-[0_0_10px_#3b82f6] animate-pulse"></span>
+        <span className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-zinc-400 shadow-[0_0_10px_#3b82f6] animate-pulse"></span>
+        <span className="absolute -bottom-1 -left-1 h-2 w-2 rounded-full bg-zinc-400 shadow-[0_0_10px_#3b82f6] animate-pulse"></span>
+        <span className="absolute -bottom-1 -right-1 h-2 w-2 rounded-full bg-zinc-400 shadow-[0_0_10px_#3b82f6] animate-pulse"></span>
       </div>
 
       {/* 2. DUST LAYER (Wrapped in overflow-hidden div) */}

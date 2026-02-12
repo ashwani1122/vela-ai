@@ -39,3 +39,23 @@
   animation: dust-drift var(--dur) linear infinite;
   animation-delay: var(--delay);
 }
+
+/* Add to index.css */
+
+@keyframes corner-glow {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(1) blur(0px);
+    box-shadow: 0 0 8px #3b82f6, 0 0 15px #3b82f6;
+  }
+  50% {
+    transform: scale(1.2);
+    filter: brightness(1.5) blur(1px);
+    box-shadow: 0 0 12px #60a5fa, 0 0 25px #60a5fa;
+  }
+}
+
+/* Apply this class to your corner spans */
+.animate-corner-glow {
+  animation: corner-glow 2s ease-in-out infinite;
+}

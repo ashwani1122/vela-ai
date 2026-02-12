@@ -4,12 +4,12 @@
 
 @keyframes shakeX {
   0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-2.25px); }
-  75% { transform: translateX(2.25px); }
+  25% { transform: translateX(-4.25px); }
+  75% { transform: translateX(4.25px); }
 }
 
 .hover-shake:hover {
-  animation: shakeX 0.01s linear infinite;
+  animation: shakeX 0.1s linear infinite;
 }
 
 /* index.css */

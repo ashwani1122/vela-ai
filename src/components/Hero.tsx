@@ -10,9 +10,6 @@ export const Hero = ()=>{
             <span className="text-zinc-100">for effortless</span>
                 <HeroButton/>
             </div>
-           
-
-
            </div>
 
            <div className="text-zinc-100 text-xl w-[80%] flex flex-col text-center pt-10">

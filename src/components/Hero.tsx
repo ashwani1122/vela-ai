@@ -1,9 +1,10 @@
 import "@/index.css"
 import { HeroButton } from "./dustcanvas"
+import { MyButton } from "./Button"
 export const Hero = ()=>{
 
     return <>
-        <div className=" flex items-center flex-col h-screen bg-zinc-950 min-h-screen ">
+        <div className=" flex items-center flex-col h-screen bg-zinc-950 min-h-screen mt-20">
            <div className="text-8xl font-medium flex flex-col w-full pt-20 text-center items-center">
                  <span className="tracking-tight text-zinc-100">Meet your AI assistant </span> 
             <div className="flex gap-5 p-4">
@@ -18,6 +19,7 @@ export const Hero = ()=>{
                 <span> 
                 </span>
            </div>
+           <MyButton placeholder="Explore Pro Collection"/>
        </div>
     </>
 }

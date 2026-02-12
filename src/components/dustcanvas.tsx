@@ -28,7 +28,7 @@ export const HeroButton = () => {
   return (
     /* Removed overflow-hidden here so corners can sit on the border edge */
     <span
-      className="group relative inline-block cursor-pointer h-30 px-2 rounded bg-neutral-950 border border-white/10"
+      className="group relative inline-block cursor-pointer h-28 px-2 rounded bg-neutral-950 border border-white/10"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -79,7 +79,7 @@ export const HeroButton = () => {
       </div>
 
       {/* 4. HERO TEXT */}
-      <span className="hover-shake relative z-10 text-zinc-100 text-8xl font-bold inline-block transition-transform duration-0 hover:scale-90 hover:duration-[3000ms]">
+      <span className="hover-shake relative z-10 text-zinc-100 text-8xl inline-block transition-transform duration-700 hover:scale-75 hover:duration-[5000ms]">
         scheduling
       </span>
     </span>

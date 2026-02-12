@@ -1,4 +1,5 @@
 
+import { Hero } from './components/Hero'
 import { Navbar1 } from './components/Navbar'
 
 function App() {

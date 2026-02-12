@@ -7,8 +7,8 @@ export default {
       keyframes: {
         shakeX: {
           "0%, 100%": { transform: "translateX(0)" },
-          "25%": { transform: "translateX(-1px)" },
-          "75%": { transform: "translateX(1px)" },
+          "25%": { transform: "translateX(-4px)" },
+          "75%": { transform: "translateX(4px)" },
         },
       },
       animation: {

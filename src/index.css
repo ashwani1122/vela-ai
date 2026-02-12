@@ -12,28 +12,30 @@
   animation: shakeX 0.01s linear infinite;
 }
 
-@keyframes dust-float {
-  0% {
-    left: 0%; /* Start well outside the container */
-    opacity: 0;
-    transform: scaleX(1);
-  }
-  20% {
-    opacity: 0.8;
-  }
-  50% {
-    transform: scaleX(4); /* Speed stretch */
-  }
-  100% {
-    left: 120%; /* End well past the container */
-    opacity: 0;
-    transform: scaleX(1);
-  }
+/* index.css */
+
+@keyframes comet-streak {
+  0% { left: -200px; }
+  100% { left: 120%; }
+}
+
+.animate-comet {
+  will-change: left, width;
+  animation: comet-streak var(--dur) linear infinite;
+  animation-delay: var(--delay);
+  /* This makes the acceleration and stretching smooth */
+  transition: animation-duration 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+              width 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.6s ease;
+}
+
+@keyframes dust-drift {
+  0% { left: -10%; opacity: 0; }
+  50% { opacity: 1; }
+  100% { left: 110%; opacity: 0; }
 }
 
 .animate-dust {
-  position: absolute;
-  will-change: left;
-  animation: dust-float var(--dur) linear infinite;
+  animation: dust-drift var(--dur) linear infinite;
   animation-delay: var(--delay);
 }

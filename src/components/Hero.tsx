@@ -1,5 +1,5 @@
 import "@/index.css"
-import {  SchedulingButton } from "./dustcanvas"
+import { HeroButton } from "./dustcanvas"
 export const Hero = ()=>{
 
     return <>
@@ -8,9 +8,7 @@ export const Hero = ()=>{
                  <span className="tracking-tight text-zinc-100">Meet your AI assistant </span> 
             <div className="flex gap-5 p-4">
             <span className="text-zinc-100">for effortless</span>
-            <span className="hover:bg-neutral-800">
-            <SchedulingButton/>
-            </span>
+                <HeroButton/>
             </div>
            
 

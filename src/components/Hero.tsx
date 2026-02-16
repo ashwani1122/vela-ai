@@ -2,6 +2,7 @@ import "@/index.css"
 import { HeroButton } from "./dustcanvas"
 
 import { MyButton } from "./Button"
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards"
 export const Hero = ()=>{
    
     return <>
@@ -23,6 +24,9 @@ export const Hero = ()=>{
            <div className="mt-20">
                 <MyButton placeholder="Book Demo ->" onclick={()=>window.location.href="https://tryvela.ai/book-demo"}/>
             </div>
+
+            
        </div>
+       
     </>
 }

@@ -86,8 +86,7 @@ export function Navbar1() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-      <Hero/>
-      
+    <Hero/>
     </div>
   );
 }
